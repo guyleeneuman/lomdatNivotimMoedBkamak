@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("assets/backgrounds/q7B.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "rubik-medium"
+}
+
+@font-face {
+    font-family: "rubik-medium" ;
+    src: url("assets/fonts/Rubik-Medium.ttf");
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 16px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bislamchIcon {
+    position: absolute;
+    width: 10%;
+    height: 70%;
+    top: 5%;
+    left: 10%;
+}
+
+.gapaIcon {
+   position: relative;
+    width: 34%;
+    height: 120%;
+    top: 0%;
+    left: 10%;
+}
+
+.peleIcon {
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    top: 20%;
+    right: 3%;
+    transition: transform 0.6s ease;
+}
+
+.peleIcon:hover {
+    transform: rotate(360deg);
+}
+
+.steps {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.qTitle {
+    position: absolute;
+    top: 6%;
+    left: 75%;
+    transform: translateX(-50%);
+}
+
+.timerBlob {
+    position: absolute;
+    left: 20%;
+    transform: translateX(-50%);
+    top: 10%;
+    height:7%;
+}
+
+#timerQ7 {
+  font-size: 1.6rem;
+  color: #F5CC8E;
+  margin-bottom: 20px;
+  position: absolute;
+  right: 72.5%;
+  top: 10.5%;
+}
+
+.instructions{
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nextQ7 {
+    position: absolute;
+    top: 86%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    width: 30%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    z-index: 9999;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+.nextQ7:hover {
+    transform: translateX(-50%) scale(1.1);
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
+}
+
+.nextQ7:active {
+    transform: translateX(-50%) scale(0.95);
+}
+
+.options {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+[class^="cubeT"] {
+  position: absolute;
+  background-color: #E3B06A;
+  color: #014725;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  text-align: center;
+  cursor: grab;
+  z-index: 1000;
+
+  font-size: clamp(1rem, 1.3vw, 1.6rem); /* גודל פונטים רספונסיבי */
+  height: clamp(50px, 5%, 50px);          /* גובה יחסית ל-parent */
+}
+
+/* מיקומים ורוחב – יחסיים ל-taza-container */
+.cubeT1  { top: 79%; left: 39%; width: clamp(40px, 15%, 1000px); }
+.cubeT2  { top: 79%; left: 12%; width: clamp(100px, 16%, 120px); }
+.cubeT3  { top: 71%; left: 77%; width: clamp(50px, 8%, 70px); }
+.cubeT4  { top: 71%; left: 35%; width: clamp(60px, 10%, 70px); }
+.cubeT5  { top: 71%; left: 51%; width: clamp(100px, 16%, 120px); }
+.cubeT6  { top: 79%; left: 79%; width: clamp(45px, 8%, 50px); }
+.cubeT7  { top: 79%; left: 55.5%; width: clamp(60px, 15%, 100px); }
+.cubeT8  { top: 71%; left: 10%; width: clamp(100px, 18%, 120px); }
+
+.cube1, .cube2, .cube3, .cube4, .cube5, .cube6, .cube7, .cube8, .cube9 {
+  position: absolute;
+  cursor: grab;
+ z-index: 10000000;
+}
+
+/* קונטיינר שמחזיק את התמונה והנקודות */
+/* קונטיינר שמרכז את התמונה ומגדיר גובה */
+.taza-container {
+  position: relative;
+  width: clamp(200px, 100%, 500px);
+  margin: 0 auto;
+  margin-top: 25vh; /* תשחקי עם המספר */
+
+}
+
+/* התמונה עצמה */
+.tazaQ7 {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* נקודות יחסיות לתמונה */
+.circle-outline {
+  position: absolute;
+  width: clamp(20px, 1.5vw, 15px);
+  height: clamp(20px, 1.5vw, 15px);
+  border-radius: 50%;
+  border: 3px solid #FFEBCD;
+  background: transparent;
+  box-shadow: 0 0 12px rgba(255, 235, 205, 0.8);
+
+
+}
+
+/* מיקום נקודות יחסית לתמונה */
+#c1  { top: 12%; left: 29%; }
+#c2  { top: 10%; left: 63%; }
+#c3  { top: 84%; left: 41%; }
+#c4  { top: 54%; left: 59%; }
+#c5  { top: 25%; left: 13%; }
+#c6  { top: 22%; left: 4%; }
+#c7  { top: 33%; left: 54%; }
+#c8  { top: 50%; left: 78%; }
+#c9  { top: 80%; left: 19%; }
+#c10 { top: 60%; left: 9%; }

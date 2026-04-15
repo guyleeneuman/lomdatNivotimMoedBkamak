@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("assets/backgrounds/startPageB.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "rubik-medium"
+}
+
+@font-face {
+    font-family: "rubik-medium" ;
+    src: url("assets/fonts/Rubik-Medium.ttf");
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 16px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bislamchIcon {
+    position: absolute;
+    width: 10%;
+    height: 70%;
+    top: 5%;
+    left: 10%;
+}
+
+.gapaIcon {
+   position: relative;
+    width: 34%;
+    height: 120%;
+    top: 0%;
+    left: 10%;
+}
+
+.peleIcon {
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    top: 20%;
+    right: 3%;
+    transition: transform 0.6s ease;
+}
+
+.peleIcon:hover {
+    transform: rotate(360deg);
+}
+
+.title {
+    position: absolute;
+    align-items: center;
+    top: 9%;
+    left: 55%;
+    transform: translateX(-50%);
+}
+
+.button {
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+.button:hover {
+    transform: translateX(-50%) scale(1.1);
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
+}
+
+.button:active {
+    transform: translateX(-50%) scale(0.95);
+}
+
+.fullName { 
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin-top: 20px;
+    left: 65%;
+    transform: translateX(-50%);
+    top: 17%;
+    width: 60%;
+}
+
+.titleFullName {
+    position: relative;
+    left: 50%;
+    width: 40%;
+    height: 30%;
+}
+
+.nameInput {
+    position: relative;
+    margin-top: 10px;              
+    padding: 10px 15px;            
+    width: 90%;                      
+    max-width: 600px;              
+    background-color: rgba(255, 235, 205, 0.5); 
+    color: #C57948;                 
+    border: none;                    
+    border-radius: 30px;             
+    font-size: 1.5rem;              
+    text-align: center;            
+    outline: none;   
+    right: 7%;   
+    height: 20%;             
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+
+.nameInput::placeholder {
+    color: #C57948;
+    opacity: 0.7;
+}
+
+
+@media (max-width: 768px) {
+    .nameInput {
+        width: 90%;   
+        font-size: 1.3rem;
+        padding: 12px 15px;
+    }
+}
+
+.personalNum {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin-top: 20px;
+    top: 32%;
+    left: 65%;
+    transform: translateX(-50%);
+    width: 60%;
+}
+
+.titlePersonalNum {
+    position: relative;
+    left: 40%;
+    width: 50%;
+    height: 30%;
+}
+
+.peleIcon:hover {
+    transform: rotate(360deg);
+}
+
+.personalArmy {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin-top: 20px;
+    top: 44%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.miniInput1 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;              
+    padding: 10px 15px;            
+    width: 22%;                      
+    max-width: 600px;              
+    background-color: rgba(255, 235, 205, 0.5); 
+    color: #C57948;                 
+    border: none;                    
+    border-radius: 30px;             
+    font-size: 1rem;              
+    text-align: center;            
+    outline: none;   
+    left: 64%;   
+    height: 3%;   
+    top: 50%;          
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+
+.miniInput1::placeholder {
+    color: #C57948;
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .miniInput1 {
+        width: 20%;   
+        font-size: 1rem;
+        padding: 12px 15px;
+        color: #C57948;
+    }
+}
+
+.miniInput2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;              
+    padding: 10px 15px;            
+    width: 22%;                      
+    max-width: 600px;              
+    background-color: rgba(255, 235, 205, 0.5); 
+    color: #C57948;                 
+    border: none;                    
+    border-radius: 30px;             
+    font-size: 1rem;              
+    text-align: center;            
+    outline: none;   
+    left: 36%;   
+    height: 3%;   
+    top: 50%;          
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+
+.miniInput2::placeholder {
+    color: #C57948;
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .miniInput2 {
+        width: 20%;   
+        font-size: 1rem;
+        padding: 12px 15px;
+        color: #C57948;
+    }
+}
+
+.miniInput3 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;              
+    padding: 10px 15px;            
+    width: 22%;                      
+    max-width: 600px;              
+    background-color: rgba(255, 235, 205, 0.5); 
+    color: #C57948;                 
+    border: none;                    
+    border-radius: 30px;             
+    font-size: 1rem;              
+    text-align: center;            
+    outline: none;   
+    left: 8%;   
+    height: 3%;   
+    top: 50%;          
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+
+.miniInput3::placeholder {
+    color: #C57948;
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .miniInput3 {
+        width: 20%;   
+        font-size: 1rem;
+        padding: 12px 15px;
+        color: #C57948;
+    }
+}

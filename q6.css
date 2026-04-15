@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("assets/backgrounds/q6B.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "rubik-medium"
+}
+
+@font-face {
+    font-family: "rubik-medium" ;
+    src: url("assets/fonts/Rubik-Medium.ttf");
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 16px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bislamchIcon {
+    position: absolute;
+    width: 10%;
+    height: 70%;
+    top: 5%;
+    left: 10%;
+}
+
+.gapaIcon {
+   position: relative;
+    width: 34%;
+    height: 120%;
+    top: 0%;
+    left: 10%;
+}
+
+.peleIcon {
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    top: 20%;
+    right: 3%;
+    transition: transform 0.6s ease;
+}
+
+.peleIcon:hover {
+    transform: rotate(360deg);
+}
+
+.steps {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.options {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nextQ {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    width: 55%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.nextQ:hover {
+    transform: translateX(-50%) scale(1.1);
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
+}
+
+.nextQ:active {
+    transform: translateX(-50%) scale(0.95);
+}
+
+.qTitle {
+    position: absolute;
+    top: 6%;
+    left: 75%;
+    transform: translateX(-50%);
+}
+
+.timerBlob {
+    position: absolute;
+    left: 20%;
+    transform: translateX(-50%);
+    top: 10%;
+    height:7%;
+}
+
+#timerQ6 {
+  font-size: 1.6rem;
+  color: #F5CC8E;
+  margin-bottom: 20px;
+  position: absolute;
+  right: 72.5%;
+  top: 10.5%;
+}
+
+.instructions{
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.textBlob1 {
+    position: absolute;
+    top: 27%;
+    left: 24%;
+    transform: translateX(-50%);
+}
+
+.textBlob2 {
+    position: absolute;
+    top: 27%;
+    left: 80%;
+    transform: translateX(-50%);
+}
+
+.textBlob3 {
+    position: absolute;
+    top: 41%;
+    left: 24%;
+    transform: translateX(-50%);
+}
+
+.textBlob4 {
+    position: absolute;
+    top: 41%;
+    left: 80%;
+    transform: translateX(-50%);
+}
+
+.textBlob5 {
+    position: absolute;
+    top: 54%;
+    left: 24%;
+    transform: translateX(-50%);
+}
+
+.textBlob6 {
+    position: absolute;
+    top: 35%;
+    left: 52%;
+    transform: translateX(-50%);
+}
+
+.textBlob7 {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translateX(-50%);
+}
+
+
+/* כל ה-cubeTags יחסיים ל-options */
+[class^="cubeTag"] {
+  position: absolute;
+  background-color: #E3B06A;
+  color: #014725;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  text-align: center;
+  cursor: grab;
+  z-index: 1000;
+
+  font-size: clamp(1rem, 1.3vw, 1.6rem); /* גודל פונטים רספונסיבי */
+  height: clamp(30px, 5%, 50px);          /* גובה יחסי ל-parent */
+}
+
+/* מיקומים ורוחב – יחסיים ל-options */
+.cubeTag1  { top: 67%; left: 46%; width: clamp(60px, 10%, 70px); }
+.cubeTag2  { top: 67%; left: 31%; width: clamp(55px, 9%, 65px); }
+.cubeTag3  { top: 67%; left: 16%; width: clamp(55px, 9%, 65px); }
+.cubeTag4  { top: 72%; left: 76%; width: clamp(55px, 9%, 65px); }
+.cubeTag5  { top: 29%; left: 74%; width: clamp(55px, 9%, 65px); }
+.cubeTag6  { top: 37%; left: 42%; width: clamp(90px, 15%, 100px); }
+.cubeTag7  { top: 72%; left: 54%; width: clamp(90px, 15%, 100px); }
+.cubeTag8  { top: 72%; left: 39%; width: clamp(55px, 9%, 65px); }
+.cubeTag9  { top: 72%; left: 13%; width: clamp(85px, 14%, 100px); }
+.cubeTag10 { top: 78%; left: 68%; width: clamp(85px, 14%, 100px); }
+.cubeTag11 { top: 78%; left: 51%; width: clamp(60px, 10%, 70px); }
+.cubeTag12 { top: 78%; left: 34%; width: clamp(60px, 10%, 70px); }
+.cubeTag13 { top: 78%; left: 16%; width: clamp(60px, 10%, 70px); }
+
+.textBlob1,.textBlob2,.textBlob3,.textBlob4,.textBlob5,.textBlob6,.textBlob7 {
+  position: absolute;
+}

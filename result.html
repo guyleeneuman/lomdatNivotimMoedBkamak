@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>בוחן כניסה לקמ"כ - ניווטים</title>
+  <link rel="stylesheet" href="result.css">
+</head>
+<body>
+    <div class="navbar">
+        <img class="bislamchIcon" src="assets/icons/bislachIcon.png" alt="icon 1">
+        <img class="gapaIcon" src="assets/icons/gapaIcon.png" alt="icon 2">
+        <img class="peleIcon"  src="assets/icons/peleIcon.png" alt="icon 3">
+</div>
+<img class="title1" src="assets/titles/titleResult2.png" alt="title">
+<img class="title2" src="assets/titles/titleResult3.png" alt="title">
+<img class="title3" src="assets/titles/titleResult1.png" alt="title">
+<img class="nameBlob" src="assets/elements/nameBlob.png" alt="name">
+<div class="personalInfo">XXX</div>
+<img class="scoreBlob" src="assets/elements/scoreBlob.png" alt="score">
+<div class="scoreInfo">XXX</div>
+<div class="nextQ" onclick="goToresultInfo()">
+<img class="nextQ" src="assets/buttons/checkWrongBtn.png" alt="button">
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  emailjs.init("Ak1OHw83c5xwHhhHd");
+</script>
+
+<script src="main.js"></script>
+</body>
+</html>
+<script>
+function goToresultInfo() {
+    window.location.href = "resultInfo.html";
+}
+</script>

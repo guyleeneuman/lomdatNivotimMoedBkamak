@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>בוחן כניסה לקמ"כ - ניווטים</title>
+  <link rel="stylesheet" href="personalInfo.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <img class="bislamchIcon" src="assets/icons/bislachIcon.png" alt="icon 1">
+        <img class="gapaIcon" src="assets/icons/gapaIcon.png" alt="icon 2">
+        <img class="peleIcon"  src="assets/icons/peleIcon.png" alt="icon 3">
+</div>
+<div class="title">
+    <img src="assets/titles/personalInfoTitle.png" alt="title">
+</div>
+<div class="button" id="submitButton">
+    <img src="assets/buttons/toInstructions.png" alt="start button">
+</div>
+<div class="fullName">
+    <img  class="titleFullName" src="assets/titles/fullName.png" alt="title">
+    <input type="text" class="nameInput" placeholder="הקלד שם ושם משפחה">
+</div>
+<div class="personalNum">
+    <img  class="titlePersonalNum" src="assets/titles/personalNumber.png" alt="title">
+    <input type="text" class="nameInput" id="numInput" placeholder="הקלד מספר אישי">
+</div>
+<div class="personalArmy">
+    <img  class="titlePersonalArmy" src="assets/titles/miniTitles.png" alt="title">
+</div>
+<input type="text" class="miniInput1" placeholder="">
+<input type="text" class="miniInput2" placeholder="  ">
+<input type="text" class="miniInput3" placeholder="  ">
+
+ 
+ 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  emailjs.init("Ak1OHw83c5xwHhhHd");
+</script>
+
+<script src="main.js"></script>
+</body>
+</html>

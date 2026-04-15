@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>בוחן כניסה לקמ"כ - ניווטים</title>
+  <link rel="stylesheet" href="q51.css">
+</head>
+<body>
+    <div class="navbar">
+        <img class="bislamchIcon" src="assets/icons/bislachIcon.png" alt="icon 1">
+        <img class="gapaIcon" src="assets/icons/gapaIcon.png" alt="icon 2">
+        <img class="peleIcon"  src="assets/icons/peleIcon.png" alt="icon 3">
+</div>
+<div class="timerTitle">
+  <img class="qTitle" src="assets/titles/titleQ5.png" alt="title">
+  <img class="timerBlob" src="assets/elements/timerBlob.png" alt="textBlob">
+  <div id="timerQ51">02:30</div>
+</div>
+<img class="instructions" src="assets/titles/instuctionsQ5.png" alt="title">
+<img class="nextQ" src="assets/buttons/nextBtn.png" alt="button">
+<!-- <div class="zoomWrapper">
+  <img class="zoomIn" id="zoomBtn" src="assets/elements/zoom in.png" alt="">
+</div> -->
+
+<div id="zoomContainer" class="zoomContainer">
+  <img class="taza" src="assets/elements/taza1.png" alt="">
+  <img class="qoardinatot" id="qoardinatot" src="assets/elements/Qoardinatot.PNG" alt="">
+</div>
+<div class="chart-bottom-wrapper">
+    <img class="chartBottom" src="assets/elements/chartTwo.png" alt="chart">
+    <img class="textBlob7" src="assets/elements/leftBlob.png" alt="textBlob">
+    <img class="textBlob8" src="assets/elements/middleBlob.png" alt="textBlob">
+</div>
+    <img class="options" src="assets/elements/madadim.png" alt="options">
+
+    <div class="cube1">ערוץ</div>
+    <div class="cube2">שלוחה</div>
+    <div class="cube3">אוכף</div>
+    <div class="cube4">כיפה</div>
+    <div class="cube5">כיפה עם נ.ג</div>
+    <div class="cube6">עמוד חשמל</div>
+    <div class="cube7">מבנה</div>
+    <div class="cube8">נקודת גובה ממוספרת</div>
+    <div class="cube9">דרך</div>
+  
+
+
+<img class="steps" src="assets/steps/step5.png" alt="step">
+ 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  emailjs.init("Ak1OHw83c5xwHhhHd");
+</script>
+
+<script src="main.js"></script>
+</body>
+</html>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const zoomWrapper = document.querySelector(".zoomWrapper");
+
+  if (!zoomWrapper) return;
+
+  zoomWrapper.addEventListener("click", (e) => {
+    e.stopPropagation(); // מונע קליקים כפולים
+
+    zoomWrapper.classList.toggle("showTooltip");
+
+    // מסתיר אוטומטית אחרי 2.5 שניות
+    setTimeout(() => {
+      zoomWrapper.classList.remove("showTooltip");
+    }, 2500);
+  });
+});
+</script>

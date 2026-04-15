@@ -1,0 +1,607 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("assets/backgrounds/q5B.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "rubik-medium"
+}
+
+@font-face {
+    font-family: "rubik-medium" ;
+    src: url("assets/fonts/Rubik-Medium.ttf");
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 16px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bislamchIcon {
+    position: absolute;
+    width: 10%;
+    height: 70%;
+    top: 5%;
+    left: 10%;
+}
+
+.gapaIcon {
+   position: relative;
+    width: 34%;
+    height: 120%;
+    top: 0%;
+    left: 10%;
+}
+
+.peleIcon {
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    top: 20%;
+    right: 3%;
+    transition: transform 0.6s ease;
+}
+
+.peleIcon:hover {
+    transform: rotate(360deg);
+}
+
+.steps {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.qTitle {
+    position: absolute;
+    top: 6%;
+    left: 75%;
+    transform: translateX(-50%);
+}
+
+.timerBlob {
+    position: absolute;
+    left: 20%;
+    transform: translateX(-50%);
+    top: 10%;
+    height:7%;
+}
+
+#timerQ5 {
+  font-size: 1.6rem;
+  color: #F5CC8E;
+  margin-bottom: 20px;
+  position: absolute;
+  right: 72.5%;
+  top: 10.5%;
+}
+
+.instructions{
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.chartTop {
+    position: absolute;      
+    top: 60%;              
+    left: 50%;    
+    width: 140%;          
+    transform: translateX(-50%); 
+}
+
+/* 
+.chartBottom {
+    position: absolute;
+    top: 53%;
+    left: 7%
+} */
+
+.options {
+    position: absolute;
+    top: 66%;
+    left: 10.4%;
+    left: 50%;              
+    transform: translateX(-50%); 
+}
+
+.nextQ5 {
+    position: absolute;
+    top: 79%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    width: 50%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    z-index: 9999;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+.nextQ5:hover {
+    transform: translateX(-50%) scale(1.1);
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
+}
+
+.nextQ5:active {
+    transform: translateX(-50%) scale(0.95);
+}
+
+
+.chart-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    top: 64%;
+    z-index: 10;
+
+}
+
+.answerA { 
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    left: 50%;
+    transform: translateX(80px);
+}
+
+.answerAInput {
+    position: relative;
+    margin-top: 10px;              
+    padding: 5px 15px;            
+    width: 30%;                      
+    max-width: 600px;              
+    background-color: #FFEBCD;
+    color: rgba(51, 102, 51, 0.7);            
+    border: none;                    
+    border-radius: 30px;             
+    font-size: 1.2rem;              
+    text-align: center;            
+    outline: none;   
+    bottom: 0%;  
+    height: 10%;             
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    z-index: 20000;
+}
+
+.answerAInput::placeholder {
+    color: #014725;
+    opacity: 0.7;
+}
+
+
+@media (max-width: 768px) {
+    .nameInput {
+        width: 14%;   
+        font-size: 1rem;
+        padding: 12px 15px;
+    }
+}
+
+.answerB { 
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin-top: 3px;
+    left: 50%;
+    transform: translateX(-40px);
+}
+
+.answerBInput {
+     position: relative;
+    margin-top: 10px;              
+    padding: 5px 15px;            
+    width: 30%;                      
+    max-width: 600px;              
+    background-color: #FFEBCD;
+    color: rgba(51, 102, 51, 0.7);            
+    border: none;                    
+    border-radius: 30px;             
+    font-size: 1.2rem;              
+    text-align: center;            
+    outline: none;   
+    bottom: 0%;  
+    height: 10%;             
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    z-index: 20000;
+}
+
+.answerBInput::placeholder {
+    color: #014725;
+    opacity: 0.7;
+}
+
+
+@media (max-width: 768px) {
+    .nameInput {
+        width: 14%;   
+        font-size: 1rem;
+        padding: 12px 15px;
+    }
+}
+
+.answerC { 
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin-top: 3px;
+    left: 50%;
+    transform: translateX(-160px);
+}
+
+.answerCInput {
+    position: relative;
+    margin-top: 10px;              
+    padding: 5px 15px;            
+    width: 30%;                      
+    max-width: 600px;              
+    background-color: #FFEBCD;
+    color: rgba(51, 102, 51, 0.7);            
+    border: none;                    
+    border-radius: 30px;             
+    font-size: 1.2rem;              
+    text-align: center;            
+    outline: none;   
+    bottom: 0%;  
+    height: 10%;             
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    z-index: 20000;
+}
+
+.answerCInput::placeholder {
+    color: #014725;
+    opacity: 0.7;
+}
+
+
+@media (max-width: 768px) {
+    .nameInput {
+        width: 14%;   
+        font-size: 1rem;
+        padding: 12px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+  .chart-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 13px;
+  }
+
+  .answerA,
+  .answerB,
+  .answerC {
+    position: relative;
+    left: 0;
+    transform: none;
+    margin: 0;
+  }
+
+  .answerAInput,
+  .answerBInput,
+  .answerCInput {
+    width: 24vw;       /* קטן ומאוזן */
+    max-width: 90px;
+    height: 44px;      /* טאץ׳ תקני */
+    font-size: 1rem;
+    padding: 3px 3px;
+  }
+}
+
+
+
+.cubeTag1 {
+    position: absolute;
+    top: 67%;
+    left: 40%;
+    width: 50px;
+    height: 30px;
+    background-color: #E3B06A;
+    color: #014725;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cubeTag2 {
+    position: absolute;
+    top: 75%;
+    left: 13%;
+    width: 65px;
+    height: 30px;
+    background-color: #E3B06A;
+    color: #014725;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cubeTag3 {
+    position: absolute;
+    top: 71%;
+    left: 79%;
+    width: 50px;
+    height: 30px;
+    background-color: #E3B06A;
+    color: #014725;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cubeTag4 {
+    position: absolute;
+    top: 71%;
+    left: 67%;
+    width: 50px;
+    height: 30px;
+    background-color: #E3B06A;
+    color: #014725;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cubeTag5 {
+    position: absolute;
+    top: 71%;
+    left: 40%;
+    width: 120px;
+    height: 30px;
+    background-color: #E3B06A;
+    color: #014725;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+.cubeTag6 {
+    position: absolute;
+    top: 75%;
+    left: 64%;
+    width: 120px;
+    height: 30px;
+    background-color: #E3B06A;
+    color: #014725;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+.cubeTag7 {
+    position: absolute;
+    top: 75%;
+    left: 51%;
+    width: 50px;
+    height: 30px;
+    background-color: #E3B06A;
+    color: #014725;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+.cubeTag8 {
+    position: absolute;
+    top: 68%;
+    left: 13%;
+    width: 120px;
+    height: 50px;
+    background-color: #E3B06A;
+    color: #014725;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+.cubeTag9 {
+    position: absolute;
+    top: 75%;
+    left: 28%;
+    width: 100px;
+    height: 30px;
+    background-color: #E3B06A;
+    color: #014725;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cubeTag1,.cubeTag2,.cubeTag3,.cubeTag4,.cubeTag5,.cubeTag6,.cubeTag7,
+.cubeTag8,.cubeTag9 {
+  position: absolute;
+  cursor: grab;
+}
+
+.textBlob1,.textBlob2,.textBlob3,.textBlob4,.textBlob5,.textBlob6,.textBlob7 {
+  position: absolute;
+}
+
+.zoom {
+    transition: transform 0.4s ease;
+}
+
+.zoom.zoomed {
+    transform: scale(1.5);
+    transform-origin: center center;
+    z-index: 20;
+}
+
+.qoardinatot {
+    cursor: grab;
+    touch-action: none;
+}
+
+.qoardinatot:active {
+    cursor: grabbing;
+}
+
+.zoomContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transform-origin: center center;
+    transition: transform 0.4s ease;
+}
+
+.zoomContainer.zoomed {
+    transform: scale(1.5);
+}
+
+/* התמונות נשארות כמו שהגדרת */
+.taza5 {
+    position: absolute;
+    width: 59%;
+    left: 37%;
+    top: 28%;
+}
+
+.qoardinatot {
+    position: absolute;
+    width: 69%;
+    left: -17%;
+    top: 26%;
+    cursor: grab;
+    touch-action: none;
+}
+
+@media (max-width: 768px) {
+  .zoomContainer.zoomed {
+    transform: scale(1.25);
+  }
+}
+.zoomWrapper {
+    position: absolute;
+    left: 91%;
+    top: 49%;
+    z-index: 10;
+}
+
+.zoomIn {
+    cursor: pointer;
+    display: block;
+}
+
+/* בועית הטקסט */
+.zoomWrapper::after {
+    content: "לחץ עלי להגדלה";
+    position: absolute;
+    bottom: 110%;
+    right: 170%;
+    transform: translateX(50%);
+    background: rgba(255, 235, 205, 0.9);
+    color: #C57948;
+    padding: 6px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* החץ */
+.zoomWrapper::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: rgba(255, 235, 205, 0.9) transparent transparent transparent;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* 🔹 הופעה ב-hover רק בדסקטופ */
+@media (hover: hover) and (pointer: fine) {
+  .zoomWrapper:hover::after,
+  .zoomWrapper:hover::before {
+      opacity: 1;
+      transform: translateX(50%) translateY(-5px);
+  }
+}
+
+/* 🔹 הופעה ב-tap (JS מוסיף מחלקה) */
+.zoomWrapper.showTooltip::after,
+.zoomWrapper.showTooltip::before {
+    opacity: 1;
+    transform: translateX(50%) translateY(-5px);
+}
+
+.textBlob7 {
+    position: absolute;
+    top: 60%;
+    left: 37%;
+    height: 5%;
+    width: 26%;
+}
+
+.textBlob8 {
+    position: absolute;
+    top: 60%;
+    left: 64%;
+    height: 5%;
+    width: 26%;
+}
+
+.madQ {
+    position: absolute;
+    top: 57%;
+    width: 60%; 
+    left: 50%;
+    transform: translateX(-50%);
+}

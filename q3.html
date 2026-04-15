@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>בוחן כניסה לקמ"כ - ניווטים</title>
+  <link rel="stylesheet" href="q3.css">
+</head>
+<body>
+    <div class="navbar">
+        <img class="bislamchIcon" src="assets/icons/bislachIcon.png" alt="icon 1">
+        <img class="gapaIcon" src="assets/icons/gapaIcon.png" alt="icon 2">
+        <img class="peleIcon"  src="assets/icons/peleIcon.png" alt="icon 3">
+</div>
+<div class="timerTitle">
+  <img class="qTitle" src="assets/titles/titleQ3.png" alt="title">
+  <img class="timerBlob" src="assets/elements/timerBlob.png" alt="textBlob">
+  <div id="timerQ3">01:30</div>
+</div>
+<img class="instructions" src="assets/titles/amricanQq1.png" alt="title">
+<img class="q1" src="assets/titles/q3.png" alt="title">
+<img class="options" src="assets/qOptions/optionsQ3.png" alt="options">
+<div class="radioGroup">
+  <label class="radioItem">
+    <input type="radio" name="q3" value="1">
+    <span class="customRadio"></span>
+  </label>
+
+  <label class="radioItem">
+    <input type="radio" name="q3" value="2">
+    <span class="customRadio"></span>
+  </label>
+
+  <label class="radioItem">
+    <input type="radio" name="q3" value="3">
+    <span class="customRadio"></span>
+  </label>
+
+  <label class="radioItem">
+    <input type="radio" name="q3" value="4">
+    <span class="customRadio"></span>
+  </label>
+</div>
+<div class="nextQ" onclick="goToQ4()">
+<img class="nextQ" src="assets/buttons/toNextQ.png" alt="button">
+</div>
+<img class="steps" src="assets/steps/step3.png" alt="step">
+ 
+ 
+ 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  emailjs.init("Ak1OHw83c5xwHhhHd");
+</script>
+
+<script src="main.js"></script>
+</body>
+</html>
+<script>
+function goToQ4() {
+    window.location.href = "q4.html";
+}
+</script>

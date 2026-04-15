@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("assets/backgrounds/q4B.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "rubik-medium"
+}
+
+@font-face {
+    font-family: "rubik-medium" ;
+    src: url("assets/fonts/Rubik-Medium.ttf");
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 16px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bislamchIcon {
+    position: absolute;
+    width: 10%;
+    height: 70%;
+    top: 5%;
+    left: 10%;
+}
+
+.gapaIcon {
+   position: relative;
+    width: 34%;
+    height: 120%;
+    top: 0%;
+    left: 10%;
+}
+
+.peleIcon {
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    top: 20%;
+    right: 3%;
+    transition: transform 0.6s ease;
+}
+
+.peleIcon:hover {
+    transform: rotate(360deg);
+}
+
+.qTitle {
+    position: absolute;
+    top: 6%;
+    left: 75%;
+    transform: translateX(-50%);
+}
+
+.timerBlob {
+    position: absolute;
+    left: 20%;
+    transform: translateX(-50%);
+    top: 10%;
+    height:7%;
+}
+
+#timerQ4 {
+  font-size: 1.6rem;
+  color: #F5CC8E;
+  margin-bottom: 20px;
+  position: absolute;
+  right: 72.5%;
+  top: 10.5%;
+}
+
+.instructions{
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.q1 {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.options {
+    position: absolute;
+    top: 32%;
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+.radioGroup {
+  position: absolute;
+  top: 33%;
+  left: 87%;
+  display: flex;
+  flex-direction: column;
+  gap: 51px;
+  direction: rtl;
+}
+
+.radioItem {
+  cursor: pointer;
+  position: relative;
+}
+
+.radioItem input {
+  position: absolute;
+  opacity: 0;
+}
+
+
+.customRadio {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #FFEBCD;
+  border: 3px solid #FFEBCD;
+  box-sizing: border-box;
+}
+
+
+.radioItem input:checked + .customRadio {
+  background-color: #C4723F;
+  border-color: #C4723F;
+}
+
+.nextQ {
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    width: 60%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+.nextQ:hover {
+    transform: translateX(-50%) scale(1.1);
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
+}
+
+.nextQ:active {
+    transform: translateX(-50%) scale(0.95);
+}
+
+
+.steps {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+

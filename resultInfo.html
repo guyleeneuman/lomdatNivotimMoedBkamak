@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>בוחן כניסה לקמ"כ - ניווטים</title>
+  <link rel="stylesheet" href="resultInfo.css">
+</head>
+<body>
+    <div class="navbar">
+        <img class="bislamchIcon" src="assets/icons/bislachIcon.png" alt="icon 1">
+        <img class="gapaIcon" src="assets/icons/gapaIcon.png" alt="icon 2">
+        <img class="peleIcon"  src="assets/icons/peleIcon.png" alt="icon 3">
+</div>
+<img class="title" src="assets/titles/titleResultInfo.png" alt="result">
+<img class="frame" src="assets/elements/resultInfo.png" alt="result">
+ 
+<div class="nextQ" onclick="goToResult()">
+<img class="nextQ" src="assets/buttons/backToScore.png" alt="button">
+</div>
+<div class="q1">XX</div>
+<div class="q2">XX</div>
+<div class="q3">XX</div>
+<div class="q4">XX</div>
+<div class="q5">XX</div>
+<div class="q6">XX</div>
+<div class="q7">XX</div>
+ <!-- <div id="storageDisplay" style="position:fixed;bottom:10px;left:10px;background:#fff;border:1px solid #000;padding:10px;max-height:200px;overflow:auto;z-index:10000;"></div> -->
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  emailjs.init("Ak1OHw83c5xwHhhHd");
+</script>
+
+<script src="main.js"></script>
+</body>
+</html>
+<script>
+function goToResult() {
+    window.location.href = "result.html";
+}
+// function displayStorage() {
+//   const display = document.getElementById("storageDisplay");
+//   display.innerHTML = "";
+//   for (let i = 0; i < sessionStorage.length; i++) {
+//     const key = sessionStorage.key(i);
+//     const value = sessionStorage.getItem(key);
+//     display.innerHTML += `<b>${key}</b>: ${value}<br>`;
+//  }
+//  }
+// setInterval(displayStorage, 1000); // יעדכן כל שנייה
+
+</script>
