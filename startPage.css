@@ -68,7 +68,7 @@ body {
 .button {
     position: absolute;
     top: 70%;
-    left: 55%;
+    left: 50%;
     transform: translateX(-50%);
     cursor: pointer;    
     -webkit-tap-highlight-color: transparent;
