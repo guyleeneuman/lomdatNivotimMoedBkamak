@@ -945,7 +945,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const q5Sections = [
     { taza:"assets/elements/taza1.png", answerB:{min:0,max:10}, answerA:{min:870,max:920} },
     { taza:"assets/elements/taza2.png", answerB:{min:45,max:55}, answerA:{min:870,max:920} },
-    { taza:"assets/elements/taza3.png", answerB:{min:90,max:100},   answerA:{min:980,max:1030} },
+    { taza:"assets/elements/taza3.png", answerB:{min:90,max:100},   answerA:{min:870,max:920} },
     { taza:"assets/elements/taza4.png", answerB:{min:128,max:138}, answerA:{min:1180,max:1230} }
   ];
 
