@@ -856,14 +856,14 @@ if (zoomBtn && zoomContainer) {
   });
 }
 
-// // ===== Drag & Rotate Qoardinatot Q5 (mouse + touch) =====
-// const qoardinatot = document.getElementById("qoardinatot");
+// ===== Drag & Rotate Qoardinatot Q5 (mouse + touch) =====
+const qoardinatot = document.getElementById("qoardinatot");
 
-// let isDragging = false;
-// let startX, startY, imgX = 0, imgY = 0;
+let isDragging = false;
+let startX, startY, imgX = 0, imgY = 0;
 
-// let currentRotation = 0;
-// let initialAngle = 0;
+let currentRotation = 0;
+let initialAngle = 0;
 
 // if (qoardinatot) {
 //   qoardinatot.style.position = "absolute";
